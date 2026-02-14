@@ -153,17 +153,26 @@
                 }
             }
 
-            /* スマホ対応：少し小さくする */
+            /* スマホ対応 */
             @media (max-width: 600px) {
-                h1 {
-                    font-size: 2rem;
+                body {
+                    padding: 10px;
                 }
 
-                .dog-container {
+                h1 {
+                    font-size: 1.8rem;
+                    letter-spacing: 0.15rem;
+                }
+
+                .content-wrapper {
+                    gap: 10px;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .shiba-walk {
                     width: 80px;
                     height: 80px;
-                    right: 10px;
-                    bottom: 10px;
                 }
             }
         </style>
