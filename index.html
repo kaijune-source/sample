@@ -91,6 +91,10 @@
             }
 
             .content-wrapper {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 display: flex;
                 align-items: center;
                 /* 間隔を狭く */
@@ -168,11 +172,29 @@
                     gap: 10px;
                     flex-direction: column;
                     text-align: center;
+                    /* 中央配置を確実にする */
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 90%;
+                    max-width: 400px;
                 }
 
                 .shiba-walk {
                     width: 80px;
                     height: 80px;
+                }
+
+                /* アニメーションを調整 */
+                @keyframes fadeInUp {
+                    from {
+                        opacity: 0;
+                    }
+
+                    to {
+                        opacity: 1;
+                    }
                 }
             }
         </style>
